@@ -1,71 +1,55 @@
-⚡ JUMIA JFORCE BOT — Full Product Posting Automation for E-commerce & Social Media
+# ⚡ JUMIA JFORCE BOT — Complete Multi-Platform Product Scraping & Posting Automation
 
-🧠    Overview
+## 🧠 Overview
+**JUMIA JFORCE BOT** is a **fully automated Python-based system** that empowers e-commerce sellers, marketers, and social media managers to **scrape, manage, and post products effortlessly**. This automation covers every step of product management and posting, from extracting product information on **Jumia Nigeria** to publishing posts on multiple social media platforms including **Facebook, Facebook Marketplace, Instagram, and Twitter/X** — all with minimal human intervention.  
 
-JUMIA JFORCE BOT is a complete Python automation system that automatically:
+Whether you want to streamline your e-commerce operations, grow your social media presence, or automate repetitive posting tasks, **JUMIA JFORCE BOT** handles it end-to-end, making your workflow faster, smarter, and scalable.
 
-Scrapes products from Jumia Nigeria
+This project was developed by **Ezee Kits**, and I’ve created a **detailed step-by-step video tutorial** on my **[YouTube Channel (Ezee Kits)](https://www.youtube.com/@Ezee_Kits)** that explains:  
+- How to set up Python and all dependencies  
+- How to scrape products from Jumia intelligently  
+- How to automate posting on multiple social media platforms efficiently  
+- Best practices for organized file storage and product management  
 
-Collects all relevant product information (name, price, description, images, model, specifications, seller info, production date, etc.)
+---
 
-Posts products automatically on Facebook, Facebook Marketplace, Instagram, and Twitter (X)
+## 🎯 Key Features
+**JUMIA JFORCE BOT** automates your workflow across three main areas:  
 
-Manages URLs, product data, and posting in an organized folder structure
+1. **URL Collection (`ALL URLS`)**
+   - Scrapes all product URLs from Jumia’s homepage and category pages  
+   - Saves URLs in a structured CSV file for tracking, management, and reuse  
 
-This bot runs directly on your computer or server using Python and Pyppeteer, automating your e-commerce workflow without manual posting.
+2. **Product Information Management (`PRODUCT`)**
+   - Extracts comprehensive product data, including:  
+     - Name, brand, price (₦), description, specifications, key features  
+     - Seller information, production date, item number, and more  
+   - Downloads and stores product images automatically  
+   - Maintains organized CSV files per product for structured data storage  
 
-This project was developed by Ezee Kits, and I’ve created step-by-step video tutorials on my YouTube Channel (Ezee Kits)
- explaining:
+3. **Automated Social Media Posting (`PY FILES`)**
+   - `main.py` → Scrapes product data from Jumia and stores it  
+   - `facebook.py` → Automates posting products on Facebook  
+   - `facebook_marketplace.py` → Automates posting products on Facebook Marketplace  
+   - `instagram.py` → Automates posting products on Instagram  
+   - `twitter.py` → Automates posting products on Twitter/X  
+   - `POSTING_BOT.py` → Orchestrates all posting operations and acts as the “ON switch” for full automation  
 
-How to set up Python and required libraries
+Additional features include:  
+- Randomized URL and product selection for diversity  
+- Clipboard automation to ensure proper formatting of posts  
+- Automated browser tab management to handle multiple platforms simultaneously  
+- Logging and CSV management for monitoring every posted product  
 
-How to scrape products from Jumia
+---
 
-How to automate posting to multiple social media platforms
+## ⚙️ Setup Guide
 
-🎯 What It Does
-
-The bot simplifies product posting by combining:
-
-URL Scraping (ALL URLS folder)
-
-Collects all product URLs from Jumia
-
-Saves them in CSV for tracking and reuse
-
-Product Data Collection (PRODUCT folder)
-
-Scrapes product name, price, brand, description, specifications, images, seller info, and more
-
-Stores data in structured CSV files for each product
-
-Downloads all product images automatically
-
-Social Media Posting (PY FILES folder)
-
-main.py: Scrapes Jumia and gathers product information
-
-facebook.py: Automates posting to Facebook
-
-facebook_marketplace.py: Automates posting to Facebook Marketplace
-
-instagram.py: Automates posting to Instagram
-
-twitter.py: Automates posting to Twitter/X
-
-POSTING_BOT.py: Orchestrates all posting operations, acting as the “ON switch” for automation
-
-All of this runs fully automated, allowing you to post products without manual effort, even across multiple platforms at once.
-
-⚙️ Setup (Python + Pyppeteer Installation Guide)
-
-Follow these steps to get started:
-
-🖥️ Step 1: Install Python
-
-Ensure Python 3.10+ is installed.
-
+### Step 1: Install Python
+Ensure **Python 3.10+** is installed on your system.  
+```bash
 python --version
+
 
 📦 Step 2: Install Required Libraries
 pip install pyppeteer pandas beautifulsoup4 requests asyncio pyperclip
@@ -75,15 +59,18 @@ If pyppeteer fails, try:
 
 pip install pyppeteer==2.0.0
 
+
 ⚡ Step 3: Install Chrome or Chromium
 
 Required for Pyppeteer to run browser automation
 
 Ensure your Chrome profile is cloned for smooth automation
 
+
 🧮 Step 4: Clone the Project
 git clone https://github.com/yourusername/JUMIA-JFORCE-BOT.git
 cd JUMIA-JFORCE-BOT
+
 
 ▶️ Step 5: Run the Bot
 python POSTING_BOT.py
